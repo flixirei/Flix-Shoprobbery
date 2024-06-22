@@ -1,3 +1,8 @@
+-- Policealert
+local function PoliceAlert()
+    -- add your dispatch here
+end
+
 -- Register target
 for _, register in pairs (Config.Registers) do
     exports.ox_target:addSphereZone({
@@ -40,9 +45,11 @@ for _, register in pairs (Config.Registers) do
                         pos = vec3(0.0454, 0.2131, -0.1887),
                         rot = vec3(66.4762, 7.2424, -71.9051)}
                 }) then
+                    PoliceAlert()
                     lib.callback.await('storeregister:reward', source)
                 end
                 else
+                PoliceAlert()
                 lib.notify({
                     title = Config.Language['title'],
                     description = Config.Language['fail'],
