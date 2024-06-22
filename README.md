@@ -1,5 +1,5 @@
 # Flix-Shoprobbery
-Very simple shoprobbery script for your server
+Very simple shoprobbery script for your server. You can rob one register only once
 
 # Features
 - Add your webhook to sv_main.lua for logs
